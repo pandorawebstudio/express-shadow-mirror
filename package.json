@@ -1,11 +1,20 @@
 {
-  "name": "express-shadow-mirror",
-  "version": "1.0.0",
-  "description": "Middleware to mirror production traffic to a staging server for risk-free testing and response comparison.",
-  "main": "index.js",
+  "name": "shadow-traffic-mirror",
+  "version": "2.0.0",
+  "description": "Enterprise-grade traffic mirroring middleware. Supports Express (Node Streams) and Next.js App Router (Web Standards).",
+  "type": "module",
+  "main": "./src/express.js",
+  "exports": {
+    ".": "./src/express.js",
+    "./next": "./src/next.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
   "scripts": {
     "test": "node test.js",
-    "start": "node index.js"
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "express",
