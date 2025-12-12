@@ -19,7 +19,8 @@ An enterprise-grade middleware that mirrors incoming production traffic to a "Sh
 npm install shadow-traffic-mirror
 ```
 
-### Usage: Next.js (App Router)Designed for modern app/api routes using Web Standard Request/Response objects.
+## Usage: Next.js (App Router)
+### Designed for modern app/api routes using Web Standard Request/Response objects.
 ```bash
 File: app/api/users/route.tsTypeScriptimport { NextResponse } from 'next/server';
 import { withShadow } from 'shadow-traffic-mirror/next'; // Note the /next import
@@ -38,7 +39,8 @@ export const POST = withShadow(POST_HANDLER, {
 });
 ```
 
-### Usage: Express / Node.jsDesigned for traditional Node.js servers using Streams. This middleware safely "spies" on the stream without consuming it, ensuring compatibility with body-parser.
+## Usage: Express / Node.js
+### Designed for traditional Node.js servers using Streams. This middleware safely "spies" on the stream without consuming it, ensuring compatibility with body-parser.
 ```bash
 File: server.jsJavaScriptimport express from 'express';
 import shadow from 'shadow-traffic-mirror'; // Default import
