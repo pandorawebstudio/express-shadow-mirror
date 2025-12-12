@@ -1,0 +1,40 @@
+{
+  "name": "express-shadow-mirror",
+  "version": "1.0.0",
+  "description": "Middleware to mirror production traffic to a staging server for risk-free testing and response comparison.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "shadow-traffic",
+    "mirroring",
+    "testing",
+    "devops",
+    "qa",
+    "staging",
+    "diff"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandorawebstudio/express-shadow-mirror.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pandorawebstudio/express-shadow-mirror/issues"
+  },
+  "homepage": "https://github.com/pandorawebstudio/express-shadow-mirror#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}
