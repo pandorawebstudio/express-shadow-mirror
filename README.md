@@ -68,4 +68,4 @@ app.listen(3000);
 Option | Type | Default | Description
 --- | --- | --- | ---
 target | string | Required | The base URL of the Shadow/Staging environment (e.g., https://staging.api.com).
-ignoreKeys | string[][] | List of JSON keys to exclude from the comparison (supports deep nesting).
+ignoreKeys | string[] | [] | List of JSON keys to exclude from the comparison (supports deep nesting).
